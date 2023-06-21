@@ -2,6 +2,13 @@
 
 use core::fmt;
 
+// there are 2 types of constants in Rust
+const LANGUAGE: &str = "Rust";
+static THRESHOLD: i32 = 10;
+// what are the difference
+// const is immutable and allocated at compile time
+// static is mutable or immutable and is allocated at runtime
+
 // a unit struct
 struct Unit;
 
@@ -220,5 +227,5 @@ fn main() {
     test_list = test_list.prepend(1);
     test_list.print();
 
-    println!("{}", test_list.stringify())
+    println!("{}", test_list.stringify());
 }
